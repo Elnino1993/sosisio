@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://hantavirusmaps.xyz/</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Hantavirus Outbreak Tracker 2026</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-12T00:00:00Z</news:publication_date>
+      <news:title>2026 Hantavirus Outbreak — Live Global Tracker: MV Hondius Andes Virus Cases in 20 Countries</news:title>
+      <news:keywords>hantavirus 2026, Andes virus, MV Hondius, hantavirus outbreak, hantavirus deaths, hantavirus map, hantavirus cases today, WHO hantavirus alert, hantavirus cruise ship, hantavirus person to person</news:keywords>
+      <news:stock_tickers></news:stock_tickers>
+    </news:news>
+    <image:image>
+      <image:loc>https://hantavirusmaps.xyz/og-preview.png</image:loc>
+      <image:title>Hantavirus Global Outbreak Map 2026 — MV Hondius Andes Virus in 20 Countries</image:title>
+      <image:caption>Real-time interactive map tracking Andes virus HPS from MV Hondius cruise ship, HFRS in Ukraine conflict zones, Sin Nombre virus in USA and endemic HFRS in China and Russia — updated every 30 seconds.</image:caption>
+      <image:geo_location>Global</image:geo_location>
+      <image:license>https://creativecommons.org/licenses/by/4.0/</image:license>
+    </image:image>
+  </url>
+
+</urlset>

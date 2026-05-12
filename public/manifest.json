@@ -1,0 +1,22 @@
+{
+  "name": "Hantavirus Outbreak Tracker 2026",
+  "short_name": "Hantavirus Tracker",
+  "description": "Real-time hantavirus outbreak map — Andes virus, MV Hondius, HFRS. WHO-verified cases, deaths and epidemic curve.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0c0c",
+  "theme_color": "#0c0c0c",
+  "lang": "en",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ],
+  "categories": ["health", "news", "medical"],
+  "screenshots": [
+    {
+      "src": "/og-preview.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "Hantavirus global outbreak map 2026"
+    }
+  ]
+}
