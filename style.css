@@ -762,3 +762,116 @@ h1 em {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
+
+/* ════════════════════════════════════════════
+   RESPONSIVE — TABLET & MOBILE
+   ════════════════════════════════════════════ */
+
+/* ── Tablet (≤ 900px) ── */
+@media (max-width: 900px) {
+  .ui-layer {
+    grid-template-columns: 270px 1fr;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .left-col {
+    max-height: calc(100vh - 20px);
+  }
+
+  .news-sidebar {
+    display: none;
+  }
+
+  .sim-panel {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: min(420px, calc(100vw - 290px));
+  }
+}
+
+/* ── Mobile (≤ 600px) ── */
+@media (max-width: 600px) {
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #app {
+    width: 100%;
+    height: auto;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
+
+  #map {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: 50vh;
+    min-height: 260px;
+    max-height: 380px;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+
+  .ui-layer {
+    position: relative;
+    inset: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+    z-index: 2;
+    pointer-events: auto;
+    background: var(--bg);
+  }
+
+  .left-col {
+    max-height: none;
+    overflow: visible;
+    overflow-x: hidden;
+  }
+
+  .news-sidebar {
+    display: flex;
+    max-height: 320px;
+  }
+
+  .sim-panel {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0;
+    grid-column: auto;
+    grid-row: auto;
+    align-self: stretch;
+    justify-self: stretch;
+  }
+
+  /* Sim stats: 3 columns on first row, 2 on second */
+  .sim-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sim-stat:nth-child(3) { border-right: none; }
+  .sim-stat:nth-child(4) { border-top: 1px solid var(--border); }
+  .sim-stat:nth-child(5) { border-top: 1px solid var(--border); border-right: none; }
+
+  /* Touch-friendly controls */
+  .tab-btn { padding: 8px 12px; font-size: 0.7rem; }
+  .status-btn { padding: 6px 10px; }
+
+  .leaflet-control-zoom a {
+    width: 36px !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    font-size: 18px !important;
+  }
+
+  .stat-value { font-size: 1.1rem; }
+
+  .filter-nav { flex-wrap: wrap; gap: 6px; }
+}

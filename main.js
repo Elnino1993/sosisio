@@ -3,6 +3,9 @@ import { Simulation } from './simulation.js'
 
 const map = L.map('map', { zoomControl: false }).setView([20, 0], 2);
 
+// Recompute map size when container resizes (device rotation, mobile layout shift)
+new ResizeObserver(() => map.invalidateSize()).observe(document.getElementById('map'));
+
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
   subdomains: 'abcd',
